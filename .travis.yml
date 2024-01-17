@@ -11,6 +11,7 @@ cache:
     - node_modules
 
 before_install:
+  - sudo apt-get remove nodejs
   # - openssl aes-256-cbc -K $encrypted_<your_encrypted_key>_key -iv $encrypted_<your_encrypted_key>_iv -in travis_deploy_key.enc -out ~/.ssh/travis_deploy_key -d
   # - chmod 600 ~/.ssh/travis_deploy_key
   # - echo -e "Host <your-ec2-ip>\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
